@@ -1,0 +1,30 @@
+{
+  "BIO.RACE": "Race",
+  "BIO.OCCUPATION": "Occupation",
+  "BIO.SHADOW": "Shadow",
+  "BIO.AGE": "Age",
+  "BIO.HEIGHT": "Height",
+  "BIO.WEIGHT": "Weight",
+  "BIO.APPEARANCE": "Appearance",
+  "BIO.BACKGROUND": "Background",
+  "BIO.GOAL": "Personal Goal",
+  "BIO.EXPERIENCE": "Experience",
+  "BIO.QUOTE": "Quote",
+
+  "ATTRIBUTE.ACCURATE": "Accurate",
+  "ATTRIBUTE.CUNNING": "Cunning",
+  "ATTRIBUTE.DISCREET": "Discreet",
+  "ATTRIBUTE.PERSUASIVE": "Persuasive",
+  "ATTRIBUTE.QUICK": "Quick",
+  "ATTRIBUTE.RESOLUTE": "Resolute",
+  "ATTRIBUTE.STRONG": "Strong",
+  "ATTRIBUTE.VIGILANT": "Vigilant",
+
+  "COMBAT.ARMOR": "Armor",
+  "COMBAT.ARMOR.PROTECTION": "Protection",
+  "COMBAT.ARMOR.QUALITY": "Quality",
+  "COMBAT.TOUGHNESS": "Toughness",
+  "COMBAT.TOUGHNESS.THRESHOLD": "Pain Threshold",
+  "COMBAT.CORRUPTION": "Corruption",
+  "COMBAT.CORRUPTION.THRESHOLD": "Corruption Threshold"
+}

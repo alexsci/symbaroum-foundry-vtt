@@ -1,0 +1,229 @@
+{
+  "Actor": {
+    "types": [
+      "character",
+      "npc"
+    ],
+    "templates": {
+      "bio": {
+        "race": {
+          "label": "BIO.RACE",
+          "value": ""
+        },
+        "occupation": {
+          "label": "BIO.OCCUPATION",
+          "value": ""
+        },
+        "shadow": {
+          "label": "BIO.SHADOW",
+          "value": ""
+        },
+        "age": {
+          "label": "BIO.AGE",
+          "value": ""
+        },
+        "height": {
+          "label": "BIO.HEIGHT",
+          "value": ""
+        },
+        "weight": {
+          "label": "BIO.WEIGHT",
+          "value": ""
+        },
+        "appearance": {
+          "label": "BIO.APPEARANCE",
+          "value": ""
+        },
+        "background": {
+          "label": "BIO.BACKGROUND",
+          "value": ""
+        },
+        "goal": {
+          "label": "BIO.GOAL",
+          "value": ""
+        },
+        "experience": {
+          "label": "BIO.EXPERIENCE",
+          "value": 0,
+          "total": 0
+        },
+        "quote": {
+          "label": "BIO.QUOTE",
+          "value": ""
+        }
+      },
+      "attributes": {
+        "accurate": {
+          "label": "ATTRIBUTE.ACCURATE",
+          "value": 10
+        },
+        "cunning": {
+          "label": "ATTRIBUTE.CUNNING",
+          "value": 10
+        },
+        "discreet": {
+          "label": "ATTRIBUTE.DISCREET",
+          "value": 10
+        },
+        "persuasive": {
+          "label": "ATTRIBUTE.PERSUASIVE",
+          "value": 10
+        },
+        "quick": {
+          "label": "ATTRIBUTE.QUICK",
+          "value": 10
+        },
+        "resolute": {
+          "label": "ATTRIBUTE.RESOLUTE",
+          "value": 10
+        },
+        "strong": {
+          "label": "ATTRIBUTE.STRONG",
+          "value": 10
+        },
+        "vigilant": {
+          "label": "ATTRIBUTE.VIGILANT",
+          "value": 10
+        }
+      },
+      "combat": {
+        "armor": {
+          "armorLabel": "COMBAT.ARMOR",
+          "name": "",
+          "protectionLabel": "COMBAT.ARMOR.PROTECTION",
+          "protection": "",
+          "qualityLabel": "COMBAT.ARMOR.QUALITY",
+          "quality": "",
+          "value": 0
+        },
+        "toughness": {
+          "toughnessLabel": "COMBAT.TOUGHNESS",
+          "thresholdLabel": "COMBAT.TOUGHNESS.THRESHOLD",
+          "threshold": 0,
+          "value": 0,
+          "max": 0
+        },
+        "corruption": {
+          "corruptionLabel": "COMBAT.CORRUPTION",
+          "thresholdLabel": "COMBAT.CORRUPTION.THRESHOLD",
+          "threshold": 0,
+          "temporary": 0,
+          "permanent": 0
+        }
+      }
+    },
+    "character": {
+      "bio": {
+        "race": {
+          "label": "BIO.RACE",
+          "value": ""
+        },
+        "occupation": {
+          "label": "BIO.OCCUPATION",
+          "value": ""
+        },
+        "shadow": {
+          "label": "BIO.SHADOW",
+          "value": ""
+        },
+        "age": {
+          "label": "BIO.AGE",
+          "value": ""
+        },
+        "height": {
+          "label": "BIO.HEIGHT",
+          "value": ""
+        },
+        "weight": {
+          "label": "BIO.WEIGHT",
+          "value": ""
+        },
+        "appearance": {
+          "label": "BIO.APPEARANCE",
+          "value": ""
+        },
+        "background": {
+          "label": "BIO.BACKGROUND",
+          "value": ""
+        },
+        "goal": {
+          "label": "BIO.GOAL",
+          "value": ""
+        },
+        "experience": {
+          "label": "BIO.EXPERIENCE",
+          "value": 0,
+          "total": 0
+        },
+        "quote": {
+          "label": "BIO.QUOTE",
+          "value": ""
+        }
+      },
+      "attributes": {
+        "accurate": {
+          "label": "ATTRIBUTE.ACCURATE",
+          "value": 10
+        },
+        "cunning": {
+          "label": "ATTRIBUTE.CUNNING",
+          "value": 10
+        },
+        "discreet": {
+          "label": "ATTRIBUTE.DISCREET",
+          "value": 10
+        },
+        "persuasive": {
+          "label": "ATTRIBUTE.PERSUASIVE",
+          "value": 10
+        },
+        "quick": {
+          "label": "ATTRIBUTE.QUICK",
+          "value": 10
+        },
+        "resolute": {
+          "label": "ATTRIBUTE.RESOLUTE",
+          "value": 10
+        },
+        "strong": {
+          "label": "ATTRIBUTE.STRONG",
+          "value": 10
+        },
+        "vigilant": {
+          "label": "ATTRIBUTE.VIGILANT",
+          "value": 10
+        }
+      },
+      "combat": {
+        "armor": {
+          "armorLabel": "COMBAT.ARMOR",
+          "name": "",
+          "protectionLabel": "COMBAT.ARMOR.PROTECTION",
+          "protection": "",
+          "qualityLabel": "COMBAT.ARMOR.QUALITY",
+          "quality": "",
+          "value": 0
+        },
+        "toughness": {
+          "toughnessLabel": "COMBAT.TOUGHNESS",
+          "thresholdLabel": "COMBAT.TOUGHNESS.THRESHOLD",
+          "threshold": 0,
+          "value": 0,
+          "max": 0
+        },
+        "corruption": {
+          "corruptionLabel": "COMBAT.CORRUPTION",
+          "thresholdLabel": "COMBAT.CORRUPTION.THRESHOLD",
+          "threshold": 0,
+          "temporary": 0,
+          "permanent": 0
+        }
+      }
+    }
+  },
+  "Item": {
+    "types": [
+      ""
+    ]
+  }
+}
