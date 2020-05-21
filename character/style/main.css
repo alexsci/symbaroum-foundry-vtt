@@ -90,3 +90,20 @@
     padding: 5px;
     background-color: lightslategrey;
 }
+.symbaroum .sheet-body .tab.note {
+    height: 317px;
+    width: 580px;
+}
+
+.symbaroum .sheet-body {
+    overflow: hidden;
+}
+.symbaroum .sheet-body .tab {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.symbaroum .editor,
+.symbaroum .editor-content {
+    height: 100%;
+}

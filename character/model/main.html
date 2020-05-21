@@ -30,6 +30,7 @@
             <b class="item" data-tab="combat">{{localize "TAB.COMBAT"}}</b>
             <b class="item" data-tab="gear">{{localize "TAB.GEAR"}}</b>
             <b class="item" data-tab="bio">{{localize "TAB.BIO"}}</b>
+            <b class="item" data-tab="note">{{localize "TAB.NOTE"}}</b>
         </div>
 
         <div class="attributes flex row border">
@@ -107,6 +108,9 @@
             </div>
             <div class="tab" data-group="primary" data-tab="bio">
                 {{> systems/symbaroum/character/model/bio.html}}
+            </div>
+            <div class="tab note" data-group="primary" data-tab="note">
+                {{editor content=data.note target="data.note" button=true owner=owner editable=editable}}
             </div>
         </div>
     </div>

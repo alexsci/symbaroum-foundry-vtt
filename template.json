@@ -1,8 +1,7 @@
 {
   "Actor": {
     "types": [
-      "character",
-      "npc"
+      "character"
     ],
     "character": {
       "bio": {
@@ -119,7 +118,8 @@
         "thaler": 0,
         "shilling": 0,
         "orteg": 0
-      }
+      },
+      "note": ""
     }
   },
   "Item": {
