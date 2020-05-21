@@ -34,7 +34,7 @@
 
         <div class="attributes flex row border">
             {{#each data.attributes as |attribute key|}}
-                <div class="attribute">
+                <div class="attribute" data-key="{{key}}">
                     <b>{{localize attribute.label}}</b>
                     <input name="data.attributes.{{key}}.value" type="text" value="{{attribute.value}}" data-dtype="Number"/>
                 </div>

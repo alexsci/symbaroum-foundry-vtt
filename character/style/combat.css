@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.symbaroum .character .ability.item:hover {
+    text-shadow: 0 0 10px lightslategrey;
+}
+
 .symbaroum .character .ability-header {
     text-align: center;
     width: 570px;
@@ -44,6 +48,10 @@
 
 .symbaroum .character .weapons {
     text-align: center;
+}
+
+.symbaroum .character .weapon.item:hover {
+    text-shadow: 0 0 10px lightslategrey;
 }
 
 .symbaroum .character .weapon-header {

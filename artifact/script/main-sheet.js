@@ -14,7 +14,6 @@ export class SymbaroumArtifactSheet extends ItemSheet {
     /** @override */
     getData() {
         const data = super.getData();
-        console.log(data);
         return data;
     }
 

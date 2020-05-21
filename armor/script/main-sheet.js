@@ -14,7 +14,6 @@ export class SymbaroumArmorSheet extends ItemSheet {
     /** @override */
     getData() {
         const data = super.getData();
-        console.log(data);
         return data;
     }
 
