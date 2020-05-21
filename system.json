@@ -12,7 +12,16 @@
     "common/script/hooks.js"
   ],
   "styles": [
-    "style/symbaroum.css"
+    "common/style/symbaroum.css",
+    "character/style/main.css",
+    "character/style/combat.css",
+    "character/style/gear.css",
+    "character/style/bio.css",
+    "ability/style/main.css",
+    "weapon/style/main.css",
+    "armor/style/main.css",
+    "gear/style/main.css",
+    "artifact/style/main.css"
   ],
   "packs": [],
   "languages": [

@@ -4,114 +4,6 @@
       "character",
       "npc"
     ],
-    "templates": {
-      "bio": {
-        "race": {
-          "label": "BIO.RACE",
-          "value": ""
-        },
-        "occupation": {
-          "label": "BIO.OCCUPATION",
-          "value": ""
-        },
-        "shadow": {
-          "label": "BIO.SHADOW",
-          "value": ""
-        },
-        "age": {
-          "label": "BIO.AGE",
-          "value": ""
-        },
-        "height": {
-          "label": "BIO.HEIGHT",
-          "value": ""
-        },
-        "weight": {
-          "label": "BIO.WEIGHT",
-          "value": ""
-        },
-        "appearance": {
-          "label": "BIO.APPEARANCE",
-          "value": ""
-        },
-        "background": {
-          "label": "BIO.BACKGROUND",
-          "value": ""
-        },
-        "goal": {
-          "label": "BIO.GOAL",
-          "value": ""
-        },
-        "experience": {
-          "label": "BIO.EXPERIENCE",
-          "value": 0,
-          "total": 0
-        },
-        "quote": {
-          "label": "BIO.QUOTE",
-          "value": ""
-        }
-      },
-      "attributes": {
-        "accurate": {
-          "label": "ATTRIBUTE.ACCURATE",
-          "value": 10
-        },
-        "cunning": {
-          "label": "ATTRIBUTE.CUNNING",
-          "value": 10
-        },
-        "discreet": {
-          "label": "ATTRIBUTE.DISCREET",
-          "value": 10
-        },
-        "persuasive": {
-          "label": "ATTRIBUTE.PERSUASIVE",
-          "value": 10
-        },
-        "quick": {
-          "label": "ATTRIBUTE.QUICK",
-          "value": 10
-        },
-        "resolute": {
-          "label": "ATTRIBUTE.RESOLUTE",
-          "value": 10
-        },
-        "strong": {
-          "label": "ATTRIBUTE.STRONG",
-          "value": 10
-        },
-        "vigilant": {
-          "label": "ATTRIBUTE.VIGILANT",
-          "value": 10
-        }
-      },
-      "combat": {
-        "armor": {
-          "armorLabel": "COMBAT.ARMOR",
-          "name": "",
-          "protectionLabel": "COMBAT.ARMOR.PROTECTION",
-          "protection": "",
-          "qualityLabel": "COMBAT.ARMOR.QUALITY",
-          "quality": "",
-          "value": 0
-        },
-        "toughness": {
-          "toughnessLabel": "COMBAT.TOUGHNESS",
-          "thresholdLabel": "COMBAT.TOUGHNESS.THRESHOLD",
-          "threshold": 0,
-          "value": 0,
-          "max": 0
-        },
-        "corruption": {
-          "corruptionLabel": "COMBAT.CORRUPTION",
-          "thresholdLabel": "COMBAT.CORRUPTION.THRESHOLD",
-          "threshold": 0,
-          "temporary": 0,
-          "permanent": 0
-        }
-      }
-    },
     "character": {
       "bio": {
         "race": {
@@ -152,8 +44,7 @@
         },
         "experience": {
           "label": "BIO.EXPERIENCE",
-          "value": 0,
-          "total": 0
+          "value": 0
         },
         "quote": {
           "label": "BIO.QUOTE",
@@ -198,32 +89,73 @@
         "armor": {
           "armorLabel": "COMBAT.ARMOR",
           "name": "",
-          "protectionLabel": "COMBAT.ARMOR.PROTECTION",
+          "protectionLabel": "COMBAT.ARMOR_PROTECTION",
           "protection": "",
-          "qualityLabel": "COMBAT.ARMOR.QUALITY",
+          "qualityLabel": "COMBAT.ARMOR_QUALITY",
           "quality": "",
+          "defenseLabel": "COMBAT.ARMOR_DEFENSE",
           "value": 0
         },
         "toughness": {
           "toughnessLabel": "COMBAT.TOUGHNESS",
-          "thresholdLabel": "COMBAT.TOUGHNESS.THRESHOLD",
+          "valueLabel": "COMBAT.TOUGHNESS_VALUE",
+          "maxLabel": "COMBAT.TOUGHNESS_MAX",
+          "thresholdLabel": "COMBAT.TOUGHNESS_THRESHOLD",
           "threshold": 0,
           "value": 0,
           "max": 0
         },
         "corruption": {
           "corruptionLabel": "COMBAT.CORRUPTION",
-          "thresholdLabel": "COMBAT.CORRUPTION.THRESHOLD",
+          "temporaryLabel": "COMBAT.CORRUPTION_TEMPORARY",
+          "permanentLabel": "COMBAT.CORRUPTION_PERMANENT",
+          "thresholdLabel": "COMBAT.CORRUPTION_THRESHOLD",
           "threshold": 0,
           "temporary": 0,
           "permanent": 0
         }
+      },
+      "money": {
+        "thaler": 0,
+        "shilling": 0,
+        "orteg": 0
       }
     }
   },
   "Item": {
     "types": [
-      ""
-    ]
+      "ability",
+      "weapon",
+      "armor",
+      "gear",
+      "artifact"
+    ],
+    "ability": {
+      "effect": "",
+      "action": "",
+      "level": "",
+      "description": ""
+    },
+    "weapon": {
+      "damage": "",
+      "quality": "",
+      "price": "",
+      "description": ""
+    },
+    "armor": {
+      "protection": "",
+      "quality": "",
+      "price": "",
+      "description": ""
+    },
+    "gear": {
+      "price": "",
+      "description": ""
+    },
+    "artifact": {
+      "action": "",
+      "corruption": 0,
+      "description": ""
+    }
   }
 }

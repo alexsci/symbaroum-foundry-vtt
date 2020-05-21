@@ -1,0 +1,36 @@
+.symbaroum .border {
+    border: 2px solid black;
+    margin-bottom: 5px;
+}
+.symbaroum .flex {
+    display: flex;
+}
+
+.symbaroum .row {
+    flex-direction: row;
+}
+
+.symbaroum .column {
+    flex-direction: column;
+}
+
+.symbaroum .wrap {
+    flex-wrap: wrap;
+}
+
+.symbaroum .center {
+    text-align: center;
+    align-items: center;
+}
+
+.symbaroum .margin {
+    margin: 5px;
+}
+
+.symbaroum .align-end {
+    align-items: flex-end;
+}
+
+.tabs .item.active {
+    text-shadow: 0 0 10px saddlebrown;
+}

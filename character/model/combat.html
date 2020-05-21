@@ -1,0 +1,52 @@
+<div class="flex column margin">
+    <div class="abilities flex column">
+        <b class="ability-header">{{localize "TAB.COMBAT_ABILITY"}}</b>
+        <div class="ability-column flex row">
+            <b class="ability-name">{{localize "ABILITY.NAME"}}</b>
+            <b class="ability-effect">{{localize "ABILITY.EFFECT"}}</b>
+            <b class="ability-action">{{localize "ABILITY.ACTION"}}</b>
+            <b class="ability-level">{{localize "ABILITY.LEVEL"}}</b>
+            <a class="ability-button item-create" title="Add Ability" data-type="ability"><i class="fas fa-plus"></i></a>
+        </div>
+        <div class="abilities-scrollable">
+            {{#each actor.items as |item|}}
+                {{#if item.isAbility}}
+                    <div class="ability item flex row" data-item-id="{{item._id}}">
+                        <div class="ability-name">{{item.name}}</div>
+                        <div class="ability-effect">{{item.data.effect}}</div>
+                        <div class="ability-action">{{item.data.action}}</div>
+                        <div class="ability-level">{{item.data.level}}</div>
+                        <div class="ability-button">
+                            <a class="item-control item-edit" title="Edit Ability"><i class="fas fa-edit"></i></a>
+                            <a class="item-control item-delete" title="Delete Ability"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
+    <div class="weapons flex column">
+        <b class="weapon-header">{{localize "TAB.COMBAT_WEAPON"}}</b>
+        <div class="weapon-column flex row">
+            <b class="weapon-name">{{localize "WEAPON.NAME"}}</b>
+            <b class="weapon-damage">{{localize "WEAPON.DAMAGE"}}</b>
+            <b class="weapon-quality">{{localize "WEAPON.QUALITY"}}</b>
+            <a class="weapon-button item-create" title="Add Weapon" data-type="weapon"><i class="fas fa-plus"></i></a>
+        </div>
+        <div class="weapons-scrollable">
+            {{#each actor.items as |item|}}
+                {{#if item.isWeapon}}
+                    <div class="weapon item flex row" data-item-id="{{item._id}}">
+                        <div class="weapon-name">{{item.name}}</div>
+                        <div class="weapon-damage">{{item.data.damage}}</div>
+                        <div class="weapon-quality">{{item.data.quality}}</div>
+                        <div class="weapon-button">
+                            <a class="item-control item-edit" title="Edit Weapon"><i class="fas fa-edit"></i></a>
+                            <a class="item-control item-delete" title="Delete Weapon"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>

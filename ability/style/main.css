@@ -1,0 +1,29 @@
+.symbaroum .ability .name {
+    flex-basis: 100%;
+    padding: 2px;
+}
+
+.symbaroum .ability .effect {
+    flex-basis: 100%;
+    padding: 2px;
+}
+
+.symbaroum .ability .action {
+    flex-basis: 50%;
+    padding: 2px;
+}
+
+.symbaroum .ability .level {
+    flex-basis: 50%;
+    padding: 2px;
+}
+
+.symbaroum .ability .description {
+    flex-basis: 100%;
+    padding: 2px;
+}
+
+.symbaroum .ability .description textarea {
+    height: 180px;
+    resize: none;
+}
