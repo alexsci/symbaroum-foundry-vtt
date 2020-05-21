@@ -7,7 +7,7 @@ A system for playing Symbaroum on Foundry VTT
 3. Create a Game World using the Symbaroum system.
 
 ## Sneaky Preview
-![Sneaky Preview](https://github.com/Perfectro/symbaroum-foundry-vtt/raw/master/asset/sneaky-preview.jpg)
+![Sneaky Preview](https://github.com/Perfectro/symbaroum-froundry-vtt/blob/master/asset/sneaky-preview.jpg?raw=true)
 
 ## To be done in the nearest future
 Nothing. You are more than welcome to fork this project !
