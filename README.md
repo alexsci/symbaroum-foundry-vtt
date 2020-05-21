@@ -3,7 +3,7 @@ A system for playing Symbaroum on Foundry VTT
 
 ## Install
 1. Go to the setup page and choose **Game Systems**.
-2. Click the **Install System** button, and paste in this [manifest link](https://github.com/Perfectro/symbaroum-foundry-vtt/raw/master/system.json)
+2. Click the **Install System** button, and paste in this [manifest link](https://raw.githubusercontent.com/Perfectro/symbaroum-froundry-vtt/v1.0/system.json)
 3. Create a Game World using the Symbaroum system.
 
 ## Sneaky Preview
