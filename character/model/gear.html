@@ -24,7 +24,7 @@
                 {{#each actor.items as |item|}}
                 {{#if item.isGear}}
                 <div class="gear item flex row" data-item-id="{{item._id}}">
-                    <div class="gear-name">{{item.name}}</div>
+                    <div class="gear-name clickable">{{item.name}}</div>
                     <div class="gear-button">
                         <a class="item-control item-edit" title="Edit Gear"><i class="fas fa-edit"></i></a>
                         <a class="item-control item-delete" title="Delete Gear"><i class="fas fa-trash"></i></a>
@@ -48,9 +48,9 @@
                     {{#each actor.items as |item|}}
                     {{#if item.isWeapon}}
                     <div class="weapon-gear item flex row" data-item-id="{{item._id}}">
-                        <div class="weapon-gear-name">{{item.name}}</div>
-                        <div class="weapon-gear-damage">{{item.data.damage}}</div>
-                        <div class="weapon-gear-quality">{{item.data.quality}}</div>
+                        <div class="weapon-gear-name clickable">{{item.name}}</div>
+                        <div class="weapon-gear-damage clickable">{{item.data.damage}}</div>
+                        <div class="weapon-gear-quality clickable">{{item.data.quality}}</div>
                         <div class="weapon-gear-button">
                             <a class="item-control item-edit" title="Edit Weapon"><i class="fas fa-edit"></i></a>
                             <a class="item-control item-delete" title="Delete Weapon"><i class="fas fa-trash"></i></a>
@@ -72,9 +72,9 @@
                     {{#each actor.items as |item|}}
                     {{#if item.isArmor}}
                     <div class="armor-item item flex row" data-item-id="{{item._id}}">
-                        <div class="armor-name">{{item.name}}</div>
-                        <div class="armor-protection">{{item.data.protection}}</div>
-                        <div class="armor-quality">{{item.data.quality}}</div>
+                        <div class="armor-name clickable">{{item.name}}</div>
+                        <div class="armor-protection clickable">{{item.data.protection}}</div>
+                        <div class="armor-quality clickable">{{item.data.quality}}</div>
                         <div class="armor-button">
                             <a class="item-control item-edit" title="Edit Weapon"><i class="fas fa-edit"></i></a>
                             <a class="item-control item-delete" title="Delete Weapon"><i class="fas fa-trash"></i></a>
@@ -96,9 +96,9 @@
                     {{#each actor.items as |item|}}
                     {{#if item.isArtifact}}
                     <div class="artifact-item item flex row" data-item-id="{{item._id}}">
-                        <div class="artifact-name">{{item.name}}</div>
-                        <div class="artifact-corruption">{{item.data.corruption}}</div>
-                        <div class="artifact-action">{{item.data.action}}</div>
+                        <div class="artifact-name clickable">{{item.name}}</div>
+                        <div class="artifact-corruption clickable">{{item.data.corruption}}</div>
+                        <div class="artifact-action clickable">{{item.data.action}}</div>
                         <div class="artifact-button">
                             <a class="item-control item-edit" title="Edit Artifact"><i class="fas fa-edit"></i></a>
                             <a class="item-control item-delete" title="Delete Artifact"><i class="fas fa-trash"></i></a>

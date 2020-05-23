@@ -83,33 +83,33 @@ export class SymbaroumCharacterSheet extends ActorSheet {
         html.find('.protection b').click(ev => {
             this.rollArmor(this.actor.data.data.combat.armor);
         });
-        html.find('.ability.item').click(ev => {
-            const abilityId = $(ev.currentTarget).data("itemId");
+        html.find('.ability.item .clickable').click(ev => {
+            const abilityId = $(ev.currentTarget).parents(".item").data("itemId");
             const ability = this.actor.getOwnedItem(abilityId);
             this.sendAbilityToChat(ability);
         });
-        html.find('.weapon.item').click(ev => {
-            const weaponId = $(ev.currentTarget).data("itemId");
+        html.find('.weapon.item .clickable').click(ev => {
+            const weaponId = $(ev.currentTarget).parents(".item").data("itemId");
             const weapon = this.actor.getOwnedItem(weaponId);
             this.rollDamage(weapon);
         });
-        html.find('.weapon-gear.item').click(ev => {
-            const weaponId = $(ev.currentTarget).data("itemId");
+        html.find('.weapon-gear.item .clickable').click(ev => {
+            const weaponId = $(ev.currentTarget).parents(".item").data("itemId");
             const weapon = this.actor.getOwnedItem(weaponId);
             this.sendWeaponToChat(weapon);
         });
-        html.find('.armor-item.item').click(ev => {
-            const armorId = $(ev.currentTarget).data("itemId");
+        html.find('.armor-item.item .clickable').click(ev => {
+            const armorId = $(ev.currentTarget).parents(".item").data("itemId");
             const armor = this.actor.getOwnedItem(armorId);
             this.sendArmorToChat(armor);
         });
-        html.find('.gear.item').click(ev => {
-            const gearId = $(ev.currentTarget).data("itemId");
+        html.find('.gear.item .clickable').click(ev => {
+            const gearId = $(ev.currentTarget).parents(".item").data("itemId");
             const gear = this.actor.getOwnedItem(gearId);
             this.sendGearToChat(gear);
         });
-        html.find('.artifact-item.item').click(ev => {
-            const artifactId = $(ev.currentTarget).data("itemId");
+        html.find('.artifact-item.item .clickable').click(ev => {
+            const artifactId = $(ev.currentTarget).parents(".item").data("itemId");
             const artifact = this.actor.getOwnedItem(artifactId);
             this.sendArtifactToChat(artifact);
         });
@@ -195,7 +195,7 @@ export class SymbaroumCharacterSheet extends ActorSheet {
     rollDamage(weapon) {
         let r = new Roll(weapon.data.data.damage, {});
         r.roll();
-        let weaponName = "<b>Weapon : </b>" + weapon.data.data.name + "</br>"
+        let weaponName = "<b>Weapon : </b>" + weapon.name + "</br>"
         let damage = "<b>Damage : </b>" + weapon.data.data.damage + "</br>"
         let quality = "<b>Quality : </b>" + weapon.data.data.quality + "</br>"
         let result = "<b>Result : </b>" + r._total

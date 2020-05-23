@@ -12,10 +12,10 @@
             {{#each actor.items as |item|}}
                 {{#if item.isAbility}}
                     <div class="ability item flex row" data-item-id="{{item._id}}">
-                        <div class="ability-name">{{item.name}}</div>
-                        <div class="ability-effect">{{item.data.effect}}</div>
-                        <div class="ability-action">{{item.data.action}}</div>
-                        <div class="ability-level">{{item.data.level}}</div>
+                        <div class="ability-name clickable">{{item.name}}</div>
+                        <div class="ability-effect clickable">{{item.data.effect}}</div>
+                        <div class="ability-action clickable">{{item.data.action}}</div>
+                        <div class="ability-level clickable">{{item.data.level}}</div>
                         <div class="ability-button">
                             <a class="item-control item-edit" title="Edit Ability"><i class="fas fa-edit"></i></a>
                             <a class="item-control item-delete" title="Delete Ability"><i class="fas fa-trash"></i></a>
@@ -27,7 +27,7 @@
     </div>
     <div class="weapons flex column">
         <b class="weapon-header">{{localize "TAB.COMBAT_WEAPON"}}</b>
-        <div class="weapon-column flex row">
+        <div class="weapon-column flex row" >
             <b class="weapon-name">{{localize "WEAPON.NAME"}}</b>
             <b class="weapon-damage">{{localize "WEAPON.DAMAGE"}}</b>
             <b class="weapon-quality">{{localize "WEAPON.QUALITY"}}</b>
@@ -37,9 +37,9 @@
             {{#each actor.items as |item|}}
                 {{#if item.isWeapon}}
                     <div class="weapon item flex row" data-item-id="{{item._id}}">
-                        <div class="weapon-name">{{item.name}}</div>
-                        <div class="weapon-damage">{{item.data.damage}}</div>
-                        <div class="weapon-quality">{{item.data.quality}}</div>
+                        <div class="weapon-name clickable">{{item.name}}</div>
+                        <div class="weapon-damage clickable">{{item.data.damage}}</div>
+                        <div class="weapon-quality clickable">{{item.data.quality}}</div>
                         <div class="weapon-button">
                             <a class="item-control item-edit" title="Edit Weapon"><i class="fas fa-edit"></i></a>
                             <a class="item-control item-delete" title="Delete Weapon"><i class="fas fa-trash"></i></a>
