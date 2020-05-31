@@ -2,7 +2,7 @@
 }
 
 .symbaroum .character .avatar {
-    flex-basis: 31%;
+    flex-basis: 12%;
 }
 
 .symbaroum .character .avatar img {
@@ -32,6 +32,7 @@
 .symbaroum .character .attribute {
     padding: 5px;
     text-align: center;
+    flex-basis: 12.5%;
 }
 
 .symbaroum .character .attribute b:hover {
@@ -83,16 +84,21 @@
 
 .symbaroum .character .bar .category {
     align-self: flex-end;
-    flex-basis: 50%;
+    flex-basis: 18%;
 }
 
 .symbaroum .character .sheet-tabs {
     padding: 5px;
     background-color: lightslategrey;
 }
+
+.symbaroum .character .sheet-tabs b:hover {
+    text-shadow: 0 0 10px darkolivegreen;
+}
+
 .symbaroum .sheet-body .tab.note {
-    height: 317px;
-    width: 580px;
+    height: 467px;
+    width: 887px;
 }
 
 .symbaroum .sheet-body {
@@ -106,4 +112,5 @@
 .symbaroum .editor,
 .symbaroum .editor-content {
     height: 100%;
+    padding: 5px;
 }

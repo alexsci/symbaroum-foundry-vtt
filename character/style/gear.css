@@ -1,5 +1,5 @@
 .symbaroum .character .gear-wrapper {
-    width: 571px;
+    width: 877px;
 }
 
 .symbaroum .character .gears {
@@ -24,8 +24,8 @@
 
 .symbaroum .character .gears-scrollable {
     overflow-y: auto;
-    height: 211px;
-    max-height: 211px;
+    height: 361px;
+    max-height: 361px;
 }
 
 .symbaroum .character .gear {
@@ -70,8 +70,8 @@
 
 .symbaroum .character .armors-scrollable {
     overflow-y: auto;
-    height: 40px;
-    max-height: 40px;
+    height: 100px;
+    max-height: 100px;
 }
 
 .symbaroum .character .armor-item {
@@ -113,8 +113,8 @@
 
 .symbaroum .character .weapons-gear-scrollable {
     overflow-y: auto;
-    height: 40px;
-    max-height: 40px;
+    height: 100px;
+    max-height: 100px;
 }
 
 .symbaroum .character .weapon-gear {
@@ -156,8 +156,8 @@
 
 .symbaroum .character .artifacts-scrollable {
     overflow-y: auto;
-    height: 61px;
-    max-height: 61px;
+    height: 91px;
+    max-height: 91px;
 }
 
 .symbaroum .character .artifact-item {

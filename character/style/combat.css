@@ -8,7 +8,7 @@
 
 .symbaroum .character .ability-header {
     text-align: center;
-    width: 570px;
+    width: 877px;
     background-color: lightslategrey;
 }
 
@@ -18,8 +18,8 @@
 
 .symbaroum .character .abilities-scrollable {
     overflow-y: auto;
-    height: 167px;
-    max-height: 167px;
+    height: 273px;
+    max-height: 273px;
 }
 
 .symbaroum .character .ability {
@@ -56,7 +56,7 @@
 
 .symbaroum .character .weapon-header {
     text-align: center;
-    width: 570px;
+    width: 877px;
     background-color: lightslategrey;
 }
 
@@ -66,8 +66,8 @@
 
 .symbaroum .character .weapons-scrollable {
     overflow-y: auto;
-    height: 70px;
-    max-height: 70px;
+    height: 114px;
+    max-height: 114px;
 }
 
 .symbaroum .character .weapon {
