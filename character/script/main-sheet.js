@@ -46,7 +46,7 @@ export class SymbaroumCharacterSheet extends ActorSheet {
                     roll: {
                         icon: '<i class="fas fa-check"></i>',
                         label: "Roll",
-                        callback: (html) => this.rollAttribute(attribute, html.children()[1].value)
+                        callback: (html) => this.rollAttribute(attribute, html.find('input')[0].value)
                     },
                     cancel: {
                         icon: '<i class="fas fa-times"></i>',
@@ -67,7 +67,7 @@ export class SymbaroumCharacterSheet extends ActorSheet {
                     roll: {
                         icon: '<i class="fas fa-check"></i>',
                         label: "Roll",
-                        callback: (html) => this.rollDefense(this.actor.data.data.combat.armor.value, html.children()[1].value)
+                        callback: (html) => this.rollDefense(this.actor.data.data.combat.armor.value, html.find('input')[0].value)
                     },
                     cancel: {
                         icon: '<i class="fas fa-times"></i>',
