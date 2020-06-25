@@ -2,43 +2,43 @@
   "name": "symbaroum",
   "title": "Symbaroum",
   "description": "Twilight falls. Davokar darkens.",
-  "version": 1.4,
+  "version": 2.0,
   "minimumCoreVersion": "0.6.1",
-  "compatibleCoreVersion": "0.6.2",
+  "compatibleCoreVersion": "0.6.4",
   "templateVersion": 2,
   "author": "Perfectro",
   "scripts": [],
   "esmodules": [
-    "common/script/hooks.js"
+    "script/hooks.js"
   ],
   "styles": [
-    "common/style/symbaroum.css",
-    "character/style/main.css",
-    "character/style/combat.css",
-    "character/style/gear.css",
-    "character/style/bio.css",
-    "ability/style/main.css",
-    "weapon/style/main.css",
-    "armor/style/main.css",
-    "gear/style/main.css",
-    "artifact/style/main.css"
+    "style/common.css",
+    "style/character/bio.css",
+    "style/character/character.css",
+    "style/character/combat.css",
+    "style/character/gear.css",
+    "style/ability.css",
+    "style/armor.css",
+    "style/artifact.css",
+    "style/gear.css",
+    "style/weapon.css"
   ],
   "packs": [],
   "languages": [
     {
       "lang": "fr",
       "name": "Français",
-      "path": "common/lang/fr.json"
+      "path": "lang/fr.json"
     },
     {
       "lang": "en",
       "name": "English",
-      "path": "common/lang/en.json"
+      "path": "lang/en.json"
     },
     {
       "lang": "de",
       "name": "German",
-      "path": "common/lang/de.json"
+      "path": "lang/de.json"
     }
   ],
   "gridDistance": 1,
@@ -48,6 +48,6 @@
   "url": "https://github.com/Perfectro/symbaroum-foundry-vtt",
   "socket": true,
   "manifest": "https://raw.githubusercontent.com/Perfectro/symbaroum-foundry-vtt/master/system.json",
-  "download": "https://github.com/Perfectro/symbaroum-foundry-vtt/archive/v1.4.zip",
+  "download": "https://github.com/Perfectro/symbaroum-foundry-vtt/archive/v2.0.zip",
   "license": "LICENSE.txt"
 }

@@ -1,12 +1,12 @@
-export class SymbaroumArmorSheet extends ItemSheet {
+export class SymbaroumAbilitySheet extends ItemSheet {
 
     /** @override */
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
             classes: ["symbaroum", "sheet", "item"],
-            template: "systems/symbaroum/armor/model/main.html",
+            template: "systems/symbaroum/model/ability.html",
             width: 600,
-            height: 341,
+            height: 386,
             resizable: false
         });
     }

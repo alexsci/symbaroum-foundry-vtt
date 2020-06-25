@@ -4,7 +4,7 @@ export class SymbaroumCharacterSheet extends ActorSheet {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
             classes: ["symbaroum", "sheet", "actor"],
-            template: "systems/symbaroum/character/model/main.html",
+            template: "systems/symbaroum/model/character/character.html",
             width: 907,
             height: 850,
             resizable: false,

@@ -1,10 +1,10 @@
-import {SymbaroumActor} from "./actor.js";
-import {SymbaroumCharacterSheet} from "../../character/script/main-sheet.js";
-import {SymbaroumAbilitySheet} from "../../ability/script/main-sheet.js";
-import {SymbaroumWeaponSheet} from "../../weapon/script/main-sheet.js";
-import {SymbaroumArmorSheet} from "../../armor/script/main-sheet.js";
-import {SymbaroumGearSheet} from "../../gear/script/main-sheet.js";
-import {SymbaroumArtifactSheet} from "../../artifact/script/main-sheet.js";
+import {SymbaroumActor} from "./actor/symbaroum.js";
+import {SymbaroumCharacterSheet} from "./sheet/character.js";
+import {SymbaroumAbilitySheet} from "./sheet/ability.js";
+import {SymbaroumWeaponSheet} from "./sheet/wxeapon.js";
+import {SymbaroumArmorSheet} from "./sheet/armor.js";
+import {SymbaroumGearSheet} from "./sheet/gear.js";
+import {SymbaroumArtifactSheet} from "./sheet/artifact.js";
 
 Hooks.once("init", async function () {
     CONFIG.Combat.initiative = {formula: "@attributes.quick.value + @attributes.vigilant.value / 100", decimals: 2};
@@ -22,15 +22,15 @@ Hooks.once("init", async function () {
 
 async function preloadHandlebarsTemplates() {
     const templatePaths = [
-        "systems/symbaroum/character/model/main.html",
-        "systems/symbaroum/character/model/combat.html",
-        "systems/symbaroum/character/model/gear.html",
-        "systems/symbaroum/character/model/bio.html",
-        "systems/symbaroum/ability/model/main.html",
-        "systems/symbaroum/armor/model/main.html",
-        "systems/symbaroum/weapon/model/main.html",
-        "systems/symbaroum/gear/model/main.html",
-        "systems/symbaroum/artifact/model/main.html",
+        "systems/symbaroum/model/character/character.html",
+        "systems/symbaroum/model/character/combat.html",
+        "systems/symbaroum/model/character/gear.html",
+        "systems/symbaroum/model/character/bio.html",
+        "systems/symbaroum/model/ability.html",
+        "systems/symbaroum/model/armor.html",
+        "systems/symbaroum/model/artifact.html",
+        "systems/symbaroum/model/gear.html",
+        "systems/symbaroum/model/weapon.html",
     ];
     return loadTemplates(templatePaths);
 }
