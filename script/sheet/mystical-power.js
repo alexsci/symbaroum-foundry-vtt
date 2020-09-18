@@ -1,10 +1,10 @@
 import { SymbaroumItemSheet } from "./item.js";
 
-export class ArtifactSheet extends SymbaroumItemSheet {
+export class MysticalPowerSheet extends SymbaroumItemSheet {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
             classes: ["symbaroum", "sheet", "item"],
-            template: "systems/symbaroum/template/sheet/artifact.html",
+            template: "systems/symbaroum/template/sheet/mystical-power.html",
             width: 500,
             height: 472,
             resizable: false,

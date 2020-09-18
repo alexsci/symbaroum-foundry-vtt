@@ -1,0 +1,38 @@
+.symbaroum.sheet.item .weapon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.symbaroum.sheet.item .weapon .description,
+.symbaroum.sheet.item .weapon .stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    border-top: none;
+}
+
+.symbaroum.sheet.item .weapon .description .editor {
+    height: 134px;
+}
+
+.symbaroum.sheet.item .weapon .tab .quality,
+.symbaroum.sheet.item .weapon .tab .damage,
+.symbaroum.sheet.item .weapon .tab .cost,
+.symbaroum.sheet.item .weapon .tab .attribute {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    margin: 5px 10px;
+}
+
+.symbaroum.sheet.item .weapon .tab .attribute {
+    margin-top: 10px;
+}
+
+.symbaroum.sheet.item .weapon .tab .quality {
+    margin-bottom: 10px;
+}

@@ -7,12 +7,9 @@ It provides support for **character sheets only**, game content should be drawn 
 2. Click the **Install System** button, and paste in this [manifest link](https://raw.githubusercontent.com/Perfectro/symbaroum-foundry-vtt/master/system.json)
 3. Create a Game World using the Symbaroum system.
 
-## Sneaky Preview
-![Sneaky Preview 1](https://github.com/Perfectro/symbaroum-froundry-vtt/blob/master/asset/sneaky-preview-1.jpg?raw=true)  
-![Sneaky Preview 2](https://github.com/Perfectro/symbaroum-froundry-vtt/blob/master/asset/sneaky-preview-2.jpg?raw=true)  
-
-## To be done in the nearest future
-Nothing. You are more than welcome to fork this project !
+## Preview
+![Character 1](https://github.com/Perfectro/symbaroum-froundry-vtt/blob/master/asset/preview/character-1.jpg?raw=true)  
+![Character 1](https://github.com/Perfectro/symbaroum-froundry-vtt/blob/master/asset/preview/character-2.jpg?raw=true)    
 
 ## Related Website
 - https://foundryvtt.com/

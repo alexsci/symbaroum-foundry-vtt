@@ -1,0 +1,22 @@
+.symbaroum.sheet.item .ritual {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.symbaroum.sheet.item .ritual .description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    border-top: none;
+}
+
+.symbaroum.sheet.item .ritual .tab .tradition {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    margin: 10px 10px 0 10px;
+}

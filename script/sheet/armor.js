@@ -1,23 +1,33 @@
-export class SymbaroumArmorSheet extends ItemSheet {
+import { SymbaroumItemSheet } from "./item.js";
 
-    /** @override */
+export class ArmorSheet extends SymbaroumItemSheet {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
             classes: ["symbaroum", "sheet", "item"],
-            template: "systems/symbaroum/model/armor.html",
-            width: 600,
-            height: 341,
-            resizable: false
+            template: "systems/symbaroum/template/sheet/armor.html",
+            width: 500,
+            height: 440,
+            resizable: false,
+            tabs: [
+                {
+                    navSelector: ".sheet-tabs",
+                    contentSelector: ".sheet-body",
+                    initial: "description",
+                },
+            ]
         });
     }
 
-    /** @override */
     getData() {
         const data = super.getData();
         return data;
     }
 
-    /** @override */
+    _getHeaderButtons() {
+        let buttons = super._getHeaderButtons();
+        return buttons;
+    }
+
     activateListeners(html) {
         super.activateListeners(html);
     }

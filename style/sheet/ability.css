@@ -1,0 +1,37 @@
+.symbaroum.sheet.item .ability {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.symbaroum.sheet.item .ability .description,
+.symbaroum.sheet.item .ability .novice,
+.symbaroum.sheet.item .ability .adept,
+.symbaroum.sheet.item .ability .master {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    border-top: none;
+}
+
+.symbaroum.sheet.item .ability .description .editor {
+    height: 166px;
+}
+
+.symbaroum.sheet.item .ability .tab .active,
+.symbaroum.sheet.item .ability .tab .action {
+    display: flex;
+    flex-direction: row;
+    flex-basis: calc(50% - 15px);
+}
+
+.symbaroum.sheet.item .ability .tab .action {
+    margin: 10px 5px 0 10px;
+}
+
+.symbaroum.sheet.item .ability .tab .active {
+    margin: 10px 10px 0 5px;
+}

@@ -2,57 +2,56 @@
   "name": "symbaroum",
   "title": "Symbaroum",
   "description": "Twilight falls. Davokar darkens.",
-  "version": 1.5,
-  "minimumCoreVersion": "0.6.1",
-  "compatibleCoreVersion": "0.6.4",
+  "version": "2.0.0",
+  "minimumCoreVersion": "0.6.5",
+  "compatibleCoreVersion": "0.6.6",
   "templateVersion": 2,
   "author": "Perfectro",
   "scripts": [],
   "esmodules": [
-    "script/hooks.js"
+    "script/common/hooks.js"
   ],
   "styles": [
-    "style/common.css",
-    "style/character/bio.css",
-    "style/character/character.css",
-    "style/character/combat.css",
-    "style/character/gear.css",
-    "style/ability.css",
-    "style/armor.css",
-    "style/artifact.css",
-    "style/gear.css",
-    "style/weapon.css"
+    "style/common/variable.css",
+    "style/common/actor.css",
+    "style/common/item.css",
+    "style/sheet/player.css",
+    "style/sheet/tab/player-main.css",
+    "style/sheet/tab/player-gear.css",
+    "style/sheet/tab/player-bio.css",
+    "style/sheet/tab/player-note.css",
+    "style/sheet/monster.css",
+    "style/sheet/tab/monster-main.css",
+    "style/sheet/tab/monster-gear.css",
+    "style/sheet/tab/monster-bio.css",
+    "style/sheet/tab/monster-note.css",
+    "style/sheet/trait.css",
+    "style/sheet/ability.css",
+    "style/sheet/mystical-power.css",
+    "style/sheet/ritual.css",
+    "style/sheet/weapon.css",
+    "style/sheet/armor.css",
+    "style/sheet/equipment.css",
+    "style/sheet/artifact.css",
+    "style/chat/item.css",
+    "style/chat/dialog.css",
+    "style/chat/roll.css"
   ],
   "packs": [],
   "languages": [
     {
-      "lang": "fr",
-      "name": "Français",
-      "path": "lang/fr.json"
-    },
-    {
       "lang": "en",
       "name": "English",
       "path": "lang/en.json"
-    },
-    {
-      "lang": "de",
-      "name": "Deutsche",
-      "path": "lang/de.json"
-    },
-    {
-      "lang": "es",
-      "name": "Española",
-      "path": "lang/es.json"
     }
   ],
   "gridDistance": 1,
   "gridUnits": "m",
-  "primaryTokenAttribute": null,
-  "secondaryTokenAttribute": null,
+  "primaryTokenAttribute": "health.toughness",
+  "secondaryTokenAttribute": "combat.defense",
   "url": "https://github.com/Perfectro/symbaroum-foundry-vtt",
   "socket": true,
   "manifest": "https://raw.githubusercontent.com/Perfectro/symbaroum-foundry-vtt/master/system.json",
-  "download": "https://github.com/Perfectro/symbaroum-foundry-vtt/archive/v1.5.zip",
+  "download": "https://github.com/Perfectro/symbaroum-foundry-vtt/archive/v2.0.zip",
   "license": "LICENSE.txt"
 }

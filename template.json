@@ -1,161 +1,205 @@
 {
   "Actor": {
     "types": [
-      "character"
+      "player",
+      "monster"
     ],
-    "character": {
-      "bio": {
-        "race": {
-          "label": "BIO.RACE",
-          "value": ""
-        },
-        "occupation": {
-          "label": "BIO.OCCUPATION",
-          "value": ""
-        },
-        "shadow": {
-          "label": "BIO.SHADOW",
-          "value": ""
-        },
-        "age": {
-          "label": "BIO.AGE",
-          "value": ""
-        },
-        "height": {
-          "label": "BIO.HEIGHT",
-          "value": ""
-        },
-        "weight": {
-          "label": "BIO.WEIGHT",
-          "value": ""
-        },
-        "appearance": {
-          "label": "BIO.APPEARANCE",
-          "value": ""
-        },
-        "background": {
-          "label": "BIO.BACKGROUND",
-          "value": ""
-        },
-        "goal": {
-          "label": "BIO.GOAL",
-          "value": ""
-        },
-        "experience": {
-          "label": "BIO.EXPERIENCE",
-          "value": 0
-        },
-        "quote": {
-          "label": "BIO.QUOTE",
-          "value": ""
-        }
-      },
+    "templates": {
       "attributes": {
-        "accurate": {
-          "label": "ATTRIBUTE.ACCURATE",
-          "value": 10
-        },
-        "cunning": {
-          "label": "ATTRIBUTE.CUNNING",
-          "value": 10
-        },
-        "discreet": {
-          "label": "ATTRIBUTE.DISCREET",
-          "value": 10
-        },
-        "persuasive": {
-          "label": "ATTRIBUTE.PERSUASIVE",
-          "value": 10
-        },
-        "quick": {
-          "label": "ATTRIBUTE.QUICK",
-          "value": 10
-        },
-        "resolute": {
-          "label": "ATTRIBUTE.RESOLUTE",
-          "value": 10
-        },
-        "strong": {
-          "label": "ATTRIBUTE.STRONG",
-          "value": 10
-        },
-        "vigilant": {
-          "label": "ATTRIBUTE.VIGILANT",
-          "value": 10
+        "attributes": {
+          "accurate": {
+            "label": "ATTRIBUTE.ACCURATE",
+            "value": 10
+          },
+          "cunning": {
+            "label": "ATTRIBUTE.CUNNING",
+            "value": 10
+          },
+          "discreet": {
+            "label": "ATTRIBUTE.DISCREET",
+            "value": 10
+          },
+          "persuasive": {
+            "label": "ATTRIBUTE.PERSUASIVE",
+            "value": 10
+          },
+          "quick": {
+            "label": "ATTRIBUTE.QUICK",
+            "value": 10
+          },
+          "resolute": {
+            "label": "ATTRIBUTE.RESOLUTE",
+            "value": 10
+          },
+          "strong": {
+            "label": "ATTRIBUTE.STRONG",
+            "value": 10
+          },
+          "vigilant": {
+            "label": "ATTRIBUTE.VIGILANT",
+            "value": 10
+          }
         }
       },
-      "combat": {
-        "armor": {
-          "armorLabel": "COMBAT.ARMOR",
-          "name": "",
-          "protectionLabel": "COMBAT.ARMOR_PROTECTION",
-          "protection": "",
-          "qualityLabel": "COMBAT.ARMOR_QUALITY",
-          "quality": "",
-          "defenseLabel": "COMBAT.ARMOR_DEFENSE",
-          "value": 0
-        },
-        "toughness": {
-          "toughnessLabel": "COMBAT.TOUGHNESS",
-          "valueLabel": "COMBAT.TOUGHNESS_VALUE",
-          "maxLabel": "COMBAT.TOUGHNESS_MAX",
-          "thresholdLabel": "COMBAT.TOUGHNESS_THRESHOLD",
-          "threshold": 0,
-          "value": 0,
-          "max": 0
-        },
-        "corruption": {
-          "corruptionLabel": "COMBAT.CORRUPTION",
-          "temporaryLabel": "COMBAT.CORRUPTION_TEMPORARY",
-          "permanentLabel": "COMBAT.CORRUPTION_PERMANENT",
-          "thresholdLabel": "COMBAT.CORRUPTION_THRESHOLD",
-          "threshold": 0,
-          "temporary": 0,
-          "permanent": 0
+      "health": {
+        "health": {
+          "toughness": {
+            "max": 0,
+            "value": 0,
+            "threshold": 0
+          },
+          "corruption": {
+            "permanent": 0,
+            "temporary": 0,
+            "threshold": 0
+          }
         }
+      }
+    },
+    "player": {
+      "templates": [
+        "attributes",
+        "health"
+      ],
+      "bio": {
+        "race": "",
+        "occupation": "",
+        "shadow": "",
+        "quote": "",
+        "age": "",
+        "height": "",
+        "weight": "",
+        "appearance": "",
+        "background": "",
+        "personalGoal": "",
+        "stigmas": ""
       },
-      "money": {
-        "thaler": 0,
-        "shilling": 0,
-        "orteg": 0
+      "experience": {
+        "current": 0,
+        "total": 0
       },
-      "note": ""
+      "notes": ""
+    },
+    "monster": {
+      "templates": [
+        "attributes",
+        "health"
+      ],
+      "bio": {
+        "race": "",
+        "occupation": "",
+        "resistance": "",
+        "shadow": "",
+        "quote": "",
+        "age": "",
+        "height": "",
+        "weight": "",
+        "appearance": "",
+        "background": "",
+        "personalGoal": "",
+        "tactics": "",
+        "manner": ""
+      },
+      "notes": ""
     }
   },
   "Item": {
     "types": [
+      "trait",
       "ability",
+      "mysticalPower",
+      "ritual",
       "weapon",
       "armor",
-      "gear",
+      "equipment",
       "artifact"
     ],
+    "trait": {
+      "description": "",
+      "novice": {
+        "isActive": false,
+        "action": "",
+        "description": ""
+      },
+      "adept": {
+        "isActive": false,
+        "action": "",
+        "description": ""
+      },
+      "master": {
+        "isActive": false,
+        "action": "",
+        "description": ""
+      }
+    },
     "ability": {
-      "effect": "",
-      "action": "",
-      "level": "",
+      "description": "",
+      "novice": {
+        "isActive": false,
+        "action": "",
+        "description": ""
+      },
+      "adept": {
+        "isActive": false,
+        "action": "",
+        "description": ""
+      },
+      "master": {
+        "isActive": false,
+        "action": "",
+        "description": ""
+      }
+    },
+    "mysticalPower": {
+      "material": "",
+      "description": "",
+      "novice": {
+        "isActive": false,
+        "action": "",
+        "description": ""
+      },
+      "adept": {
+        "isActive": false,
+        "action": "",
+        "description": ""
+      },
+      "master": {
+        "isActive": false,
+        "action": "",
+        "description": ""
+      }
+    },
+    "ritual": {
+      "tradition": "",
       "description": ""
     },
     "weapon": {
+      "description": "",
       "damage": "",
       "quality": "",
-      "price": "",
-      "description": ""
+      "cost": "",
+      "attribute": "",
+      "state": "other"
     },
     "armor": {
+      "description": "",
       "protection": "",
+      "impeding": 0,
       "quality": "",
-      "price": "",
-      "description": ""
+      "cost": "",
+      "state": "other"
     },
-    "gear": {
-      "price": "",
-      "description": ""
+    "equipment": {
+      "description": "",
+      "cost": "",
+      "state": "other"
     },
     "artifact": {
+      "description": "",
+      "powers": "",
       "action": "",
-      "corruption": 0,
-      "description": ""
+      "corruption": "",
+      "state": "other"
     }
   }
 }

@@ -1,0 +1,40 @@
+.symbaroum.sheet.item .mystical-power {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.symbaroum.sheet.item .mystical-power .description,
+.symbaroum.sheet.item .mystical-power .novice,
+.symbaroum.sheet.item .mystical-power .adept,
+.symbaroum.sheet.item .mystical-power .master {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    border-top: none;
+}
+
+.symbaroum.sheet.item .mystical-power .tab .material {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    margin: 10px 10px 0 10px;
+}
+
+.symbaroum.sheet.item .mystical-power .tab .active,
+.symbaroum.sheet.item .mystical-power .tab .action {
+    display: flex;
+    flex-direction: row;
+    flex-basis: calc(50% - 15px);
+}
+
+.symbaroum.sheet.item .mystical-power .tab .action {
+    margin: 10px 5px 0 10px;
+}
+
+.symbaroum.sheet.item .mystical-power .tab .active {
+    margin: 10px 10px 0 5px;
+}

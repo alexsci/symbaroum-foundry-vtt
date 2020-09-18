@@ -1,31 +1,27 @@
-import { SymbaroumItemSheet } from "./item.js";
+import { SymbaroumActorSheet } from "./actor.js";
 
-export class ArtifactSheet extends SymbaroumItemSheet {
+export class MonsterSheet extends SymbaroumActorSheet {
+
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-            classes: ["symbaroum", "sheet", "item"],
-            template: "systems/symbaroum/template/sheet/artifact.html",
-            width: 500,
-            height: 472,
+            classes: ["symbaroum", "sheet", "actor"],
+            template: "systems/symbaroum/template/sheet/monster.html",
+            width: 700,
+            height: 1000,
             resizable: false,
             tabs: [
                 {
                     navSelector: ".sheet-tabs",
                     contentSelector: ".sheet-body",
-                    initial: "description",
+                    initial: "main",
                 },
-            ]
+            ],
         });
     }
 
     getData() {
         const data = super.getData();
         return data;
-    }
-
-    _getHeaderButtons() {
-        let buttons = super._getHeaderButtons();
-        return buttons;
     }
 
     activateListeners(html) {
