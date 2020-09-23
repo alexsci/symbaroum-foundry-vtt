@@ -26,6 +26,7 @@
 .symbaroum.sheet.actor .player .gear .wrapper-left .armors,
 .symbaroum.sheet.actor .player .gear .wrapper-left .weapons,
 .symbaroum.sheet.actor .player .gear .wrapper-left .artifacts,
+.symbaroum.sheet.actor .player .gear .wrapper-right .money,
 .symbaroum.sheet.actor .player .gear .wrapper-right .equipments {
     display: flex;
     flex-direction: column;
@@ -47,8 +48,13 @@
     margin-top: 10px;
 }
 
+.symbaroum.sheet.actor .player .gear .wrapper-right .money {
+    height: 159px;
+    margin-top: 10px;
+}
+
 .symbaroum.sheet.actor .player .gear .wrapper-right .equipments {
-    height: 754px;
+    height: 585px;
 }
 
 .symbaroum.sheet.actor .player .gear .wrapper-left .armors .item-list .item-header,
@@ -96,6 +102,7 @@
 .symbaroum.sheet.actor .player .gear .wrapper-left .artifacts .item-list .state,
 .symbaroum.sheet.actor .player .gear .wrapper-right .equipments .item-list .state {
     flex-basis: 10%;
+    margin-left: 5px;
 }
 
 .symbaroum.sheet.actor .player .gear .wrapper-left .armors .item-list .state a i,
@@ -169,4 +176,30 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.symbaroum.sheet.actor .player .gear .wrapper-right .money .thaler,
+.symbaroum.sheet.actor .player .gear .wrapper-right .money .shilling,
+.symbaroum.sheet.actor .player .gear .wrapper-right .money .orteg {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    margin: 10px 10px 0 10px;
+    justify-content: center;
+}
+
+.symbaroum.sheet.actor .player .gear .wrapper-right .money .orteg {
+    margin-bottom: 10px;
+}
+
+.symbaroum.sheet.actor .player .gear .wrapper-right .money .thaler label,
+.symbaroum.sheet.actor .player .gear .wrapper-right .money .shilling label,
+.symbaroum.sheet.actor .player .gear .wrapper-right .money .orteg label {
+    flex-basis: 70%;
+}
+
+.symbaroum.sheet.actor .player .gear .wrapper-right .money .thaler input,
+.symbaroum.sheet.actor .player .gear .wrapper-right .money .shilling input,
+.symbaroum.sheet.actor .player .gear .wrapper-right .money .orteg input {
+    flex-basis: 30%;
 }

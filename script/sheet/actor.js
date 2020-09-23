@@ -1,5 +1,3 @@
-import { deathRoll } from "../common/roll.js";
-
 export class SymbaroumActorSheet extends ActorSheet {
     nbrOfFailedDeathRoll = 0;
 
@@ -33,6 +31,10 @@ export class SymbaroumActorSheet extends ActorSheet {
             data.img = "systems/symbaroum/asset/image/mysticalPower.png";
         } else if (data.type === "ritual") {
             data.img = "systems/symbaroum/asset/image/ritual.png";
+        } else if (data.type === "burden") {
+            data.img = "systems/symbaroum/asset/image/trait.png";
+        } else if (data.type === "boon") {
+            data.img = "systems/symbaroum/asset/image/trait.png";
         } else if (data.type === "weapon") {
             data.img = "systems/symbaroum/asset/image/weapon.png";
         } else if (data.type === "armor") {
@@ -57,7 +59,6 @@ export class SymbaroumActorSheet extends ActorSheet {
     _onItemDelete(event) {
         event.preventDefault();
         const div = $(event.currentTarget).parents(".item");
-        console.log(div.data("itemId"));
         this.actor.deleteOwnedItem(div.data("itemId"));
         div.slideUp(200, () => this.render(false));
     }

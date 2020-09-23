@@ -1,7 +1,5 @@
 export class SymbaroumItem extends Item {
     static async create(data, options) {
-        console.log(data);
-        console.log(options);
         if (!data.img) {
             if (data.type === "trait") {
                 data.img = "systems/symbaroum/asset/image/trait.png";
@@ -11,6 +9,10 @@ export class SymbaroumItem extends Item {
                 data.img = "systems/symbaroum/asset/image/mysticalPower.png";
             } else if (data.type === "ritual") {
                 data.img = "systems/symbaroum/asset/image/ritual.png";
+            } else if (data.type === "burden") {
+                data.img = "systems/symbaroum/asset/image/trait.png";
+            } else if (data.type === "boon") {
+                data.img = "systems/symbaroum/asset/image/trait.png";
             } else if (data.type === "weapon") {
                 data.img = "systems/symbaroum/asset/image/weapon.png";
             } else if (data.type === "armor") {

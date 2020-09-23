@@ -59,7 +59,8 @@ export class PlayerSheet extends SymbaroumActorSheet {
         event.preventDefault();
         const attributeName = $(event.currentTarget).data("attribute");
         const attribute = this.actor.data.data.attributes[attributeName];
-        const attributeData = {name: game.i18n.localize(attribute.label), value: attribute.value};
+        const bonus = this.actor.data.data.bonus[attributeName];
+        const attributeData = {name: game.i18n.localize(attribute.label), value: attribute.value + bonus};
         await prepareRollAttribute(attributeData, null, null);
     }
 
@@ -74,9 +75,9 @@ export class PlayerSheet extends SymbaroumActorSheet {
         event.preventDefault();
         const div = $(event.currentTarget).parents(".item");
         const weapon = this.actor.getOwnedItem(div.data("itemId"));
-        console.log(weapon);
         const attribute = this.actor.data.data.attributes[weapon.data.data.attribute];
-        const attributeData = {name: game.i18n.localize(attribute.label), value: attribute.value};
+        const bonus = this.actor.data.data.bonus[weapon.data.data.attribute];
+        const attributeData = { name: game.i18n.localize(attribute.label), value: attribute.value + bonus };
         const weaponData = { damage: weapon.data.data.damage, quality: weapon.data.data.quality }
         await prepareRollAttribute(attributeData, null, weaponData);
     }

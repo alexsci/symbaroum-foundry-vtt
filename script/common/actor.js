@@ -1,8 +1,32 @@
 export class SymbaroumActor extends Actor {
     prepareData() {
         super.prepareData();
+        this._initializeData(this.data);
         this._computeItems(this.data);
         this._computeSecondaryAttributes(this.data);
+    }
+
+    _initializeData(data) {
+        data.data.combat = {
+            id: null,
+            name: "Armor",
+            data: {
+                protection: "0",
+                quality: "",
+                impeding: 0
+            }
+        };
+        data.data.bonus = {
+            defense: 0,
+            accurate: 0,
+            cunning: 0,
+            discreet: 0,
+            persuasive: 0,
+            quick: 0,
+            resolute: 0,
+            strong: 0,
+            vigilant: 0
+        };
     }
 
     _computeItems(data) {
@@ -11,7 +35,9 @@ export class SymbaroumActor extends Actor {
             item.isAbility = item.type === "ability";
             item.isMysticalPower = item.type === "mysticalPower";
             item.isRitual = item.type === "ritual";
-            item.isPower = item.isTrait || item.isAbility || item.isMysticalPower || item.isRitual;
+            item.isBurden = item.type === "burden";
+            item.isBoon = item.type === "boon";
+            item.isPower = item.isTrait || item.isAbility || item.isMysticalPower || item.isRitual || item.isBurden || item.isBoon;
             if (item.isPower) this._computePower(data, item);
             item.isWeapon = item.type === "weapon";
             item.isArmor = item.type === "armor";
@@ -31,13 +57,17 @@ export class SymbaroumActor extends Actor {
             armor: activeArmor.name,
             protection: activeArmor.data.protection,
             quality: activeArmor.data.quality,
-            defense: data.data.attributes.quick.value - activeArmor.data.impeding
+            defense: data.data.attributes.quick.value - activeArmor.data.impeding + data.data.bonus.defense
         };
     }
 
     _computePower(data, item) {
         if (item.isRitual) {
             item.data.actions = "Ritual"
+        } else if (item.isBurden) {
+            item.data.actions = "Burden"
+        } else if (item.isBoon) {
+            item.data.actions = "Bane"
         } else {
             let novice = "-";
             let adept = "-";
@@ -52,6 +82,19 @@ export class SymbaroumActor extends Actor {
     _computeGear(data, item) {
         item.isActive = item.data.state === "active";
         item.isEquipped = item.data.state === "equipped";
+        if (item.isActive) {
+            data.data.bonus = {
+                defense: data.data.bonus.defense + item.data.bonus.defense,
+                accurate: data.data.bonus.accurate + item.data.bonus.accurate,
+                cunning: data.data.bonus.cunning + item.data.bonus.cunning,
+                discreet: data.data.bonus.discreet + item.data.bonus.discreet,
+                persuasive: data.data.bonus.persuasive + item.data.bonus.persuasive,
+                quick: data.data.bonus.quick + item.data.bonus.quick,
+                resolute: data.data.bonus.resolute + item.data.bonus.resolute,
+                strong: data.data.bonus.strong + item.data.bonus.strong,
+                vigilant: data.data.bonus.vigilant + item.data.bonus.vigilant
+            };
+        }
     }
 
     _getActiveArmor(data) {

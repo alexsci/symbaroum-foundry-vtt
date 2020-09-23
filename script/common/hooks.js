@@ -6,6 +6,8 @@ import { TraitSheet } from "../sheet/trait.js";
 import { AbilitySheet } from "../sheet/ability.js";
 import { MysticalPowerSheet } from "../sheet/mystical-power.js";
 import { RitualSheet } from "../sheet/ritual.js";
+import { BurdenSheet } from "../sheet/burden.js";
+import { BoonSheet } from "../sheet/boon.js";
 import { WeaponSheet } from "../sheet/weapon.js";
 import { ArmorSheet } from "../sheet/armor.js";
 import { EquipmentSheet } from "../sheet/equipment.js";
@@ -24,6 +26,8 @@ Hooks.once("init", () => {
     Items.registerSheet("symbaroum", AbilitySheet, { types: ["ability"], makeDefault: true });
     Items.registerSheet("symbaroum", MysticalPowerSheet, { types: ["mysticalPower"], makeDefault: true });
     Items.registerSheet("symbaroum", RitualSheet, { types: ["ritual"], makeDefault: true });
+    Items.registerSheet("symbaroum", BurdenSheet, { types: ["burden"], makeDefault: true });
+    Items.registerSheet("symbaroum", BoonSheet, { types: ["boon"], makeDefault: true });
     Items.registerSheet("symbaroum", WeaponSheet, { types: ["weapon"], makeDefault: true });
     Items.registerSheet("symbaroum", ArmorSheet, { types: ["armor"], makeDefault: true });
     Items.registerSheet("symbaroum", EquipmentSheet, { types: ["equipment"], makeDefault: true });

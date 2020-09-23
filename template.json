@@ -54,12 +54,20 @@
             "threshold": 0
           }
         }
+      },
+      "money": {
+        "money": {
+          "thaler": 0,
+          "shilling": 0,
+          "orteg": 0
+        }
       }
     },
     "player": {
       "templates": [
         "attributes",
-        "health"
+        "health",
+        "money"
       ],
       "bio": {
         "race": "",
@@ -83,7 +91,8 @@
     "monster": {
       "templates": [
         "attributes",
-        "health"
+        "health",
+        "money"
       ],
       "bio": {
         "race": "",
@@ -109,11 +118,28 @@
       "ability",
       "mysticalPower",
       "ritual",
+      "burden",
+      "boon",
       "weapon",
       "armor",
       "equipment",
       "artifact"
     ],
+    "templates": {
+      "bonus": {
+        "bonus": {
+          "defense": 0,
+          "accurate": 0,
+          "cunning": 0,
+          "discreet": 0,
+          "persuasive": 0,
+          "quick": 0,
+          "resolute": 0,
+          "strong": 0,
+          "vigilant": 0
+        }
+      }
+    },
     "trait": {
       "description": "",
       "novice": {
@@ -173,7 +199,16 @@
       "tradition": "",
       "description": ""
     },
+    "burden": {
+      "description": ""
+    },
+    "boon": {
+      "description": ""
+    },
     "weapon": {
+      "templates": [
+        "bonus"
+      ],
       "description": "",
       "damage": "",
       "quality": "",
@@ -182,6 +217,9 @@
       "state": "other"
     },
     "armor": {
+      "templates": [
+        "bonus"
+      ],
       "description": "",
       "protection": "",
       "impeding": 0,
@@ -190,11 +228,17 @@
       "state": "other"
     },
     "equipment": {
+      "templates": [
+        "bonus"
+      ],
       "description": "",
       "cost": "",
       "state": "other"
     },
     "artifact": {
+      "templates": [
+        "bonus"
+      ],
       "description": "",
       "powers": "",
       "action": "",

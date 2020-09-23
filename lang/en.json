@@ -32,7 +32,7 @@
   "ATTRIBUTE.RESOLUTE": "Resolute",
   "ATTRIBUTE.STRONG": "Strong",
   "ATTRIBUTE.VIGILANT": "Vigilant",
-  "ATTRIBUTE.NONE": "None",
+  "ATTRIBUTE.CUSTOM": "Custom",
 
   "BIO.NAME": "Name",
   "BIO.RACE": "Race",
@@ -49,6 +49,12 @@
   "BIO.STIGMAS": "Stigmas",
   "BIO.TACTICS": "Tactics",
   "BIO.MANNER": "Manner",
+
+  "BOON.NAME": "Name",
+  "BOON.DESCRIPTION": "Description",
+
+  "BURDEN.NAME": "Name",
+  "BURDEN.DESCRIPTION": "Description",
 
   "CHAT.DEATH_ROLL": "Death Roll",
   "CHAT.SUCCEED": "Succeed",
@@ -92,6 +98,10 @@
   "ITEM.RITUAL": "Ritual",
   "ITEM.WEAPON": "Weapon",
 
+  "MONEY.THALER": "Thaler",
+  "MONEY.SHILLING": "Shilling",
+  "MONEY.ORTEG": "Orteg",
+
   "MYSTICAL_POWER.NAME": "Name",
   "MYSTICAL_POWER.ACTIVE": "Is Active",
   "MYSTICAL_POWER.ACTION": "Action",
@@ -111,6 +121,7 @@
   "TAB.MASTER": "MASTER",
   "TAB.STATS": "STATS",
   "TAB.POWER": "POWER",
+  "TAB.BONUS": "BONUS",
 
   "TITLE.ABILITIES_POWERS": "ABILITIES & POWERS",
   "TITLE.HEALTH": "HEALTH",
@@ -127,6 +138,7 @@
   "TITLE.MASTER": "MASTER",
   "TITLE.STATS": "STATS",
   "TITLE.POWER": "POWER",
+  "TITLE.MONEY": "MONEY",
 
   "TRAIT.NAME": "Name",
   "TRAIT.ACTIVE": "Is Active",

@@ -19,6 +19,8 @@ function preloadHandlebarsTemplates() {
     "systems/symbaroum/template/sheet/ability.html",
     "systems/symbaroum/template/sheet/mystical-power.html",
     "systems/symbaroum/template/sheet/ritual.html",
+    "systems/symbaroum/template/sheet/burden.html",
+    "systems/symbaroum/template/sheet/boon.html",
     "systems/symbaroum/template/sheet/weapon.html",
     "systems/symbaroum/template/sheet/armor.html",
     "systems/symbaroum/template/sheet/equipment.html",

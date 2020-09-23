@@ -24,7 +24,7 @@ export async function rollAttribute(attribute, modifier, armor, weapon) {
     let mod = (modifier.value - 10) * -1;
     let diceTarget = attribute.value + mod;
     let rollData = {
-        name: `${attribute.name} (${attribute.value}) ⬅ ${modifier.name} (${modifier.value})`,
+        name: `${attribute.name} (${diceTarget}) ⬅ ${modifier.name} (${mod})`,
         hasSucceed: attributeRoll._total <= diceTarget,
         diceResult: attributeRoll._total,
         hasArmor: hasArmor,
@@ -62,7 +62,6 @@ export async function deathRoll(sheet) {
         hasSucceed: hasSucceed,
         nbrOfFailure: sheet.nbrOfFailedDeathRoll
     };
-    console.log(death._total);
     const html = await renderTemplate("systems/symbaroum/template/chat/death.html", rollData);
     let chatData = {
         user: game.user._id,

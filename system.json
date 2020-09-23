@@ -2,7 +2,7 @@
   "name": "symbaroum",
   "title": "Symbaroum",
   "description": "Twilight falls. Davokar darkens.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "minimumCoreVersion": "0.6.5",
   "compatibleCoreVersion": "0.6.6",
   "templateVersion": 2,
@@ -29,6 +29,8 @@
     "style/sheet/ability.css",
     "style/sheet/mystical-power.css",
     "style/sheet/ritual.css",
+    "style/sheet/burden.css",
+    "style/sheet/boon.css",
     "style/sheet/weapon.css",
     "style/sheet/armor.css",
     "style/sheet/equipment.css",
@@ -52,6 +54,6 @@
   "url": "https://github.com/Perfectro/symbaroum-foundry-vtt",
   "socket": true,
   "manifest": "https://raw.githubusercontent.com/Perfectro/symbaroum-foundry-vtt/master/system.json",
-  "download": "https://github.com/Perfectro/symbaroum-foundry-vtt/archive/v2.0.zip",
+  "download": "https://github.com/Perfectro/symbaroum-foundry-vtt/archive/v2.1.zip",
   "license": "LICENSE.txt"
 }

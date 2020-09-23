@@ -30,8 +30,8 @@ export async function prepareRollAttribute(attribute, armor, weapon) {
 
 function getTargetAttribute(attributeName, bonus) {
     const target = game.user.targets.values().next().value;
-    if (target === undefined || attributeName === "none") {
-        return { name: game.i18n.localize("ATTRIBUTE.NONE"), value: 10 - bonus };
+    if (target === undefined || attributeName === "custom") {
+        return { name: game.i18n.localize("ATTRIBUTE.CUSTOM"), value: 10 - bonus };
     } else if (attributeName === "defense") {
         let defense = target.actor.data.data.combat.defense;
         return { name: game.i18n.localize("ARMOR.DEFENSE"), value: defense - bonus };
