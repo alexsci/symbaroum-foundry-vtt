@@ -26,6 +26,7 @@
 .symbaroum.sheet.actor .monster .gear .wrapper-left .armors,
 .symbaroum.sheet.actor .monster .gear .wrapper-left .weapons,
 .symbaroum.sheet.actor .monster .gear .wrapper-left .artifacts,
+.symbaroum.sheet.actor .monster .gear .wrapper-right .money,
 .symbaroum.sheet.actor .monster .gear .wrapper-right .equipments {
     display: flex;
     flex-direction: column;

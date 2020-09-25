@@ -9,6 +9,8 @@
   "ACTION.PASSIVE": "Passive",
   "ACTION.REACTION": "Reaction",
   "ACTION.SPECIAL": "Special",
+  "ACTION.MOVEMENT": "Movement",
+  "ACTION.FULL_TURN": "Full Turn",
 
   "ARMOR.NAME": "Name",
   "ARMOR.PROTECTION": "Protection",
