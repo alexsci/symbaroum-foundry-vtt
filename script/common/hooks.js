@@ -56,3 +56,17 @@ Hooks.on("preCreateActor", (createData) => {
 Hooks.on("createOwnedItem", (actor, item) => {
 
 });
+
+Hooks.once('diceSoNiceReady', (dice3d) => {
+    dice3d.addSystem({id:"symbaroum",name:"Symbaroum"}, true);
+    dice3d.addColorset({
+        name: 'Symbaroum',
+        description: "Symbaroum",
+        category: "Symbaroum",
+        foreground: '#e9e7c5',
+        background: "#d6b076",
+        outline: "#3b3832",
+        texture: 'stars',
+        edge: '#211f19'
+    },"default");
+})

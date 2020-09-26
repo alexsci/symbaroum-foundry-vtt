@@ -1,11 +1,17 @@
 export async function rollAttribute(attribute, modifier, armor, weapon) {
     let attributeRoll = new Roll("1d20", {});
     attributeRoll.roll();
+    if (game.dice3d != null) {
+        await game.dice3d.showForRoll(attributeRoll);
+    }
     let hasArmor = armor != null;
     if (hasArmor) {
         if (armor.protection !== "") {
             let armorRoll = new Roll(armor.protection, {});
             armorRoll.roll();
+            if (game.dice3d != null) {
+                await game.dice3d.showForRoll(armorRoll);
+            }
             armor.value = armorRoll._total;
         } else {
             armor.value = 0;
@@ -16,6 +22,9 @@ export async function rollAttribute(attribute, modifier, armor, weapon) {
         if (weapon.damage !== "") {
             let weaponRoll = new Roll(weapon.damage, {});
             weaponRoll.roll();
+            if (game.dice3d != null) {
+                await game.dice3d.showForRoll(weaponRoll);
+            }
             weapon.value = weaponRoll._total;
         } else {
             weapon.value = 0;
@@ -49,12 +58,18 @@ export async function rollAttribute(attribute, modifier, armor, weapon) {
 export async function deathRoll(sheet) {
     let death = new Roll("1d20", {});
     death.roll();
+    if (game.dice3d != null) {
+        await game.dice3d.showForRoll(death);
+    }
     let hasSucceed = death._total >= 2 && death._total <= 10;
     let isCriticalSuccess = death._total === 1;
     if (!hasSucceed) sheet.nbrOfFailedDeathRoll++;
     if (isCriticalSuccess) sheet.nbrOfFailedDeathRoll = 0;
     let heal = new Roll("1d4", {});
     heal.roll();
+    if (game.dice3d != null) {
+        await game.dice3d.showForRoll(heal);
+    }
     let rollData = {
         isCriticalSuccess: isCriticalSuccess,
         healing: heal._total,
